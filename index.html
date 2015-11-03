@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Maps</title>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+        <link rel="stylesheet" href="directions.css">
+
+    <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"> -->
+  </head>
+
+  <body>
+    <!-- START OF PAGE -->
+    <div data-role="page" id='homePage'>
+
+      <div data-role="header">
+        <h1>Geolocation</h1>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#homePage">Geolocation</a></li>
+            <li><a href="#mapPage">Map</a></li>
+            <li><a href="#directionsPage">Direction</a></li>
+            <li><a href="#directionPage">Driving Direction</a></li>
+          </ul>
+        </div><!-- /navbar -->
+      </div><!--/header -->
+
+<div role='main' class"ui-content">
+  <p>Geolocation Page</p>
+  <div id="geoLocation">geoLocation</div>
+
+</div>
+  <div data-role='footer' data-position='fixed'>
+</div><!-- /footer -->
+</div><!-- /page -->
+
+
+    <div>
+    <p>Geolocation Page</p>
+    <div id="geoLocation">geoLocation</div>
+    <button id='getGeolocation'>get geolocation</button>
+  </div>
+
+
+  <div data-role="page" id='mapPage'>
+    <div data-role="header">
+      <h1>Geolocation</h1>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#homePage">Geolocation</a></li>
+          <li><a href="#mapPage">Map</a></li>
+          <li><a href="#directionsPage">Direction</a></li>
+          <li><a href="#directionPage">Driving Direction</a></li>
+        </ul>
+      </div><!-- /navbar -->
+    </div><!--/header -->
+    <div role='main' class="ui-content">
+    <p>Map Page</p>
+    <div id="map-canvas">map-canvas</div>
+  </div>
+  <div data-role='footer' data-position='fixed'>
+    <h4>page footer</h4>
+  </div><!-- /footer -->
+  </div><!-- /page -->
+
+  <div data-role="page" id='directionsPage'>
+  <div data-role="header">
+    <h1>Geolocation</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#homePage">Geolocation</a></li>
+        <li><a href="#mapPage">Map</a></li>
+        <li><a href="#directionsPage">Direction</a></li>
+        <li><a href="#directionPage">Driving Direction</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!--/header -->
+    <div role='main' class="ui-content">
+    <p>Direction Page</p>
+    <div id="directions-canvas">directions-canvas</div>
+  </div>
+  <div data-role='footer' data-position='fixed'>
+    <h4>page footer</h4>
+  </div><!-- /footer -->
+  </div><!-- /page -->
+
+  <div data-role="page" id='directionPage'>
+  <div data-role="header">
+    <h1>Geolocation</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#homePage">Geolocation</a></li>
+        <li><a href="#mapPage">Map</a></li>
+        <li><a href="#directionsPage">Direction</a></li>
+        <li><a href="#directionPage">Driving Direction</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!--/header -->
+    <div role='main' class="ui-content">
+    <p>Direction Page</p>
+    <div id="floating-panel">
+      <strong>Start:</strong>
+      <select id="start">
+          <option value="">Starting Location</option>
+        <option value="175 E Olive Ave, Burbank, CA 91502">Coding Dojo</option>
+      </select>
+      <br>
+      <strong>End:</strong>
+      <input type='hidden' id="end" value='11539 Amalfi Way Los Angeles CA 91326'>
+        <!-- <option value="">Pick Destination</option>
+        <option value="11539 Amalfi Way Los Angeles CA 91326">Steve's Home</option>
+        <option value="joplin, mo">Joplin, MO</option>
+        <option value="oklahoma city, ok">Oklahoma City</option>
+        <option value="amarillo, tx">Amarillo</option>
+        <option value="gallup, nm">Gallup, NM</option>
+        <option value="flagstaff, az">Flagstaff, AZ</option>
+        <option value="winona, az">Winona</option>
+        <option value="kingman, az">Kingman</option>
+        <option value="barstow, ca">Barstow</option>
+        <option value="san bernardino, ca">San Bernardino</option>
+        <option value="los angeles, ca">Los Angeles</option>
+      </select> -->
+    </div>
+    <div id="right-panel"></div>
+   <div id="map"></div>
+  </div>
+  <div data-role='footer' data-position='fixed'>
+    <h4>page footer</h4>
+  </div><!-- /footer -->
+  </div><!-- /page -->
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAFfbGwSgrK9Ap3Uycf1eJkjS5XtmykvhE"></script>
+  <script src='geolocation.js'></script>
+  </body>
+</html>
